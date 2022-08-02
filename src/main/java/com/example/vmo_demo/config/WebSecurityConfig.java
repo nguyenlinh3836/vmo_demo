@@ -1,5 +1,6 @@
 package com.example.vmo_demo.config;
 
+import com.example.vmo_demo.model.ERole;
 import com.example.vmo_demo.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -55,6 +56,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .authorizeRequests()
         .antMatchers("/swagger-ui/**", "/swagger-resources/**", "/v2/**").permitAll()
         .antMatchers("/api/v1/auth/**").permitAll()
+        .antMatchers("api/v1/product").hasRole("USER")
         .anyRequest().authenticated();
 
     http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
