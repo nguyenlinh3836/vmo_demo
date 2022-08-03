@@ -1,5 +1,6 @@
-package com.example.vmo_demo.config;
+package com.example.vmo_demo.common.filters;
 
+import com.example.vmo_demo.security.JwtUtils;
 import com.example.vmo_demo.service.UserDetailsServiceImpl;
 import java.io.IOException;
 import javax.servlet.FilterChain;
@@ -8,7 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;

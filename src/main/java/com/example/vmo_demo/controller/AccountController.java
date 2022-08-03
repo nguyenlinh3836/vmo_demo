@@ -1,10 +1,10 @@
 package com.example.vmo_demo.controller;
 
-import com.example.vmo_demo.config.JwtUtils;
-import com.example.vmo_demo.dto.AccountDto;
+import com.example.vmo_demo.security.JwtUtils;
+import com.example.vmo_demo.model.request.AccountDto;
 import com.example.vmo_demo.mapper.AccountMapper;
-import com.example.vmo_demo.model.Account;
-import com.example.vmo_demo.payload.JwtResponse;
+import com.example.vmo_demo.model.entities.Account;
+import com.example.vmo_demo.model.response.JwtResponse;
 import com.example.vmo_demo.repository.RoleRepo;
 import com.example.vmo_demo.service.AccountService;
 import java.util.List;

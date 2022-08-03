@@ -1,6 +1,6 @@
 package com.example.vmo_demo.controller;
 
-import com.example.vmo_demo.dto.ProductDto;
+import com.example.vmo_demo.model.request.ProductDto;
 import com.example.vmo_demo.service.ProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

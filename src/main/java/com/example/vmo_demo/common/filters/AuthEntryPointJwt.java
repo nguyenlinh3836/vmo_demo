@@ -1,4 +1,4 @@
-package com.example.vmo_demo.config;
+package com.example.vmo_demo.common.filters;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

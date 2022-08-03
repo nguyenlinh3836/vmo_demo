@@ -1,20 +1,17 @@
 package com.example.vmo_demo.service;
 
-import com.example.vmo_demo.dto.AccountDto;
+import com.example.vmo_demo.model.request.AccountDto;
 import com.example.vmo_demo.mapper.AccountMapper;
-import com.example.vmo_demo.model.Account;
-import com.example.vmo_demo.model.ERole;
-import com.example.vmo_demo.model.Role;
+import com.example.vmo_demo.model.entities.Account;
+import com.example.vmo_demo.common.enums.ERole;
+import com.example.vmo_demo.model.entities.Role;
 import com.example.vmo_demo.repository.AccountRepo;
 import com.example.vmo_demo.repository.RoleRepo;
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service

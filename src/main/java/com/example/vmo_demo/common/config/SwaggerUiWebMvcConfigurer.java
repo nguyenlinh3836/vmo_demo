@@ -1,4 +1,4 @@
-package com.example.vmo_demo.config;
+package com.example.vmo_demo.common.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.StringUtils;

@@ -1,7 +1,7 @@
 package com.example.vmo_demo.service;
 
-import com.example.vmo_demo.model.Account;
-import com.example.vmo_demo.model.Role;
+import com.example.vmo_demo.model.entities.Account;
+import com.example.vmo_demo.model.entities.Role;
 import com.example.vmo_demo.repository.AccountRepo;
 import java.util.Collection;
 import java.util.Optional;

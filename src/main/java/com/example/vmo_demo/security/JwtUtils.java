@@ -1,10 +1,9 @@
-package com.example.vmo_demo.config;
+package com.example.vmo_demo.security;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import io.jsonwebtoken.Jwts;
 import java.util.Date;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.User;
 import io.jsonwebtoken.*;
@@ -14,9 +13,9 @@ import org.springframework.stereotype.Component;
 public class JwtUtils {
   private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
 
-  private String jwtSecret = "secret";
+  private final String jwtSecret = "secret";
 
-  private long jwtExpirationMs=604800000L;
+  private final long jwtExpirationMs=604800000L;
   public String generateJwtToken(Authentication authentication) {
     User userPrincipal = (User) authentication.getPrincipal();
     return Jwts.builder()

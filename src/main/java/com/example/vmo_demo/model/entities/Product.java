@@ -1,4 +1,4 @@
-package com.example.vmo_demo.model;
+package com.example.vmo_demo.model.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

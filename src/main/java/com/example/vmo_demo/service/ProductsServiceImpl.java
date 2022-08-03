@@ -1,8 +1,8 @@
 package com.example.vmo_demo.service;
 
-import com.example.vmo_demo.dto.ProductDto;
+import com.example.vmo_demo.model.request.ProductDto;
 import com.example.vmo_demo.mapper.ProductMapper;
-import com.example.vmo_demo.model.Product;
+import com.example.vmo_demo.model.entities.Product;
 import com.example.vmo_demo.repository.ProductRepo;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

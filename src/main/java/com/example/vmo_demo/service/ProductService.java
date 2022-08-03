@@ -1,6 +1,6 @@
 package com.example.vmo_demo.service;
 
-import com.example.vmo_demo.dto.ProductDto;
+import com.example.vmo_demo.model.request.ProductDto;
 import java.util.List;
 import org.springframework.data.domain.Pageable;
 

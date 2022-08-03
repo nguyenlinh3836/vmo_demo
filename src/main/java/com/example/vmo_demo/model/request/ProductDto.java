@@ -1,4 +1,4 @@
-package com.example.vmo_demo.dto;
+package com.example.vmo_demo.model.request;
 
 import javax.persistence.Id;
 

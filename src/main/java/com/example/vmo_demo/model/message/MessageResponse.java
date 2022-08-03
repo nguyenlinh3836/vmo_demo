@@ -1,4 +1,4 @@
-package com.example.vmo_demo.payload;
+package com.example.vmo_demo.model.message;
 
 public class MessageResponse {
   private String message;

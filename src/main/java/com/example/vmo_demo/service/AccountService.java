@@ -1,6 +1,6 @@
 package com.example.vmo_demo.service;
 
-import com.example.vmo_demo.dto.AccountDto;
+import com.example.vmo_demo.model.request.AccountDto;
 import java.util.Optional;
 
 public interface AccountService {
